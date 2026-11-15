@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="214" viewBox="0 0 900 214" role="img" aria-labelledby="title description">
+  <title id="title">Fluxo de um agente de IA</title>
+  <desc id="description">Dados e eventos fornecem contexto para um agente de IA, que decide quais APIs e ferramentas acionar.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#101D2B"/>
+      <stop offset="1" stop-color="#111625"/>
+    </linearGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#547091" opacity=".28"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect width="900" height="214" rx="20"/>
+    </clipPath>
+  </defs>
+  <style>
+    text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 2px; fill: #8BDDDC; }
+    .label { font-size: 25px; font-weight: 700; fill: #F2F7FC; }
+    .detail { font-size: 16px; fill: #BFCEE1; }
+    .signal { fill: #B2FFF3; stroke: #79DFC9; stroke-width: 3; }
+    .incoming { animation: incoming 4.4s linear infinite; }
+    .outgoing { animation: outgoing 4.4s linear infinite; }
+    .core { animation: core 4.4s ease-in-out infinite; }
+    @keyframes incoming {
+      0%, 5% { transform: translateX(0); opacity: 0; }
+      10% { opacity: 1; }
+      34% { transform: translateX(90px); opacity: 1; }
+      38%, 100% { transform: translateX(96px); opacity: 0; }
+    }
+    @keyframes core {
+      0%, 29%, 64%, 100% { opacity: 0; }
+      46% { opacity: .9; }
+    }
+    @keyframes outgoing {
+      0%, 54% { transform: translateX(0); opacity: 0; }
+      59% { opacity: 1; }
+      83% { transform: translateX(90px); opacity: 1; }
+      87%, 100% { transform: translateX(96px); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .incoming, .outgoing, .core { animation: none; opacity: 0; }
+    }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="900" height="214" fill="url(#surface)"/>
+    <rect width="900" height="214" fill="url(#dots)"/>
+  </g>
+  <rect x=".5" y=".5" width="899" height="213" rx="19.5" fill="none" stroke="#415471"/>
+  <circle cx="38" cy="37" r="3" fill="#7DF3DB"/>
+  <text class="eyebrow" x="50" y="42">FLUXO DE UM AGENTE DE IA</text>
+
+  <g fill="none" stroke="#6E9DB2" stroke-width="2">
+    <path d="M253 127H339m-7-6 7 6-7 6M561 127h86m-7-6 7 6-7 6"/>
+  </g>
+  <circle class="signal incoming" cx="253" cy="127" r="4" opacity="0"/>
+  <circle class="signal outgoing" cx="561" cy="127" r="4" opacity="0"/>
+
+  <rect x="34" y="72" width="219" height="110" rx="13" fill="#182536" stroke="#3B516D"/>
+  <g fill="none" stroke="#85BDF8" stroke-width="1.7">
+    <ellipse cx="60" cy="101" rx="8" ry="3.5"/>
+    <path d="M52 101v11c0 4.7 16 4.7 16 0v-11M52 107c0 4.7 16 4.7 16 0"/>
+  </g>
+  <text class="label" x="81" y="114">Contexto</text>
+  <text class="detail" x="52" y="152">Dados e eventos</text>
+
+  <rect x="339" y="72" width="222" height="110" rx="13" fill="#13313B" stroke="#65D5C1" stroke-width="1.4"/>
+  <rect class="core" x="338" y="71" width="224" height="112" rx="14" fill="none" stroke="#A3FFF0" stroke-width="3" opacity="0"/>
+  <g fill="none" stroke="#91F3DB" stroke-width="1.6">
+    <path d="M361 112l12-13 7 15z"/>
+    <circle cx="361" cy="112" r="2.8" fill="#13313B"/>
+    <circle cx="373" cy="99" r="2.8" fill="#13313B"/>
+    <circle cx="380" cy="114" r="2.8" fill="#13313B"/>
+  </g>
+  <text class="label" x="393" y="114">Agente de IA</text>
+  <text class="detail" x="357" y="152">Interpreta e decide</text>
+
+  <rect x="647" y="72" width="219" height="110" rx="13" fill="#182536" stroke="#3B516D"/>
+  <g fill="none" stroke="#B7A6FB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m674 101-5 6 5 6m8-12 5 6-5 6m-3-14-2 16"/>
+  </g>
+  <text class="label" x="700" y="114">Ações</text>
+  <text class="detail" x="665" y="152">APIs e ferramentas</text>
+</svg>
