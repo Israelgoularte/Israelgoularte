@@ -1,12 +1,24 @@
-# Israel Goularte
+<h1 align="center">Israel Goularte</h1>
 
-**IA aplicada · Automação de processos · Integração de sistemas**
+<p align="center"><strong>IA aplicada · Automação de processos · Integração de sistemas</strong></p>
 
-Desenvolvo agentes, integrações e ferramentas que conectam dados às rotinas de negócio. Meu foco é automatizar tarefas repetitivas e facilitar o acesso às informações que as equipes usam para tomar decisões.
+<p align="center">
+  <a href="https://raelflow.com">Raelflow</a> · <a href="mailto:contato@raelflow.com">contato@raelflow.com</a>
+</p>
 
-[Raelflow](https://raelflow.com) · [contato@raelflow.com](mailto:contato@raelflow.com)
+<h2 align="center">Tecnologias e ferramentas</h2>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgres,docker,java,git,github" width="260" alt="PostgreSQL, Docker, Java, Git e GitHub">
+</p>
+
+<p align="center">
+  <img src="./fluxo-agente-ia.svg" width="900" alt="Fluxo de um agente de IA: recebe contexto de dados e eventos, interpreta e decide, e aciona APIs e ferramentas.">
+</p>
 
 ## Áreas de atuação
+
+Desenvolvo agentes, integrações e ferramentas que conectam dados às rotinas de negócio.
 
 - **IA aplicada** — agentes que consultam dados e usam ferramentas para apoiar análises e rotinas operacionais.
 - **Automação e integrações** — fluxos de trabalho que conectam APIs, webhooks, CRMs, scripts e serviços sob medida.
